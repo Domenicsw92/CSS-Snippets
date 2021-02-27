@@ -1,0 +1,141 @@
+
+body{
+    background-color: darkgray;
+}
+header,
+ footer{
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+    color: purple;
+    font-family: fantasy;
+    
+    }
+ h1,h2 h3{
+        margin-bottom: 0.625rem;
+        color:purple;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+ h1 {
+        font-size: 4rem;
+      }
+      
+  h2 {
+        font-size: 3.5rem;
+      }
+      
+  h3 {
+        font-size: 3rem;
+      }
+  p {
+        margin-bottom: 1rem;
+      }
+ .Title{
+          padding: 1rem 1.2rem;
+          font-size: 4.5rem;
+      }
+ main{
+          width: 98%;
+        margin: 2rem auto;
+    }
+
+ .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+       
+    }
+
+ .center{
+        justify-self: center;
+    }
+
+.code-column{
+        flex: 1 0 100%;
+        padding: 1.5rem;
+        transition: flex-basis 500ms linear;
+        margin-bottom: 1.5rem;
+    }
+    
+ .code-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 100%;
+        padding: 2rem;
+        color: orchid;
+        outline: 2px solid seashell;
+        outline-offset: -2px;
+        transition: all 0.5s ease-in-out;
+    }
+
+.code-card, .code-header{  
+        position: relative;
+        margin: -4rem 0 1.5rem 0;
+        padding: 0.5rem 1rem;
+        background-color: darkcyan;
+        color: orchid;
+        border: 2px solid seashell;
+        border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+      }
+
+
+ .code-card:hover, .code-header {
+  box-shadow: inset 0px 0px 8px orchid, 0 0 15px orchid;
+}
+
+.code-card .code-block {
+    flex-grow: 1;
+  }
+
+.code-card, pre {
+   
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 1.2rem 1rem;
+    color: seashell;
+    border-radius: 8px;
+  
+    background-image: linear-gradient(
+      rgba(232, 102, 236, 0.3) 0%,
+      rgba(232, 102, 236, 0.6) 100%
+    );
+    display: flex;
+    align-items: center;
+  }
+  
+ 
+   .code-card, pre:active {
+    user-select: all;
+  }
+  
+  @media screen and (min-width: 768px) {
+  
+    .code-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+   
+    .code-column:last-child {
+      flex-grow: 1;
+    }
+  }
+  
+
+  @media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+  
+    .code-column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
+  
